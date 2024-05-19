@@ -7,15 +7,94 @@
     --c-5: hsl(75, 94%, 57%);
 }
 
+html {
+    font-size: 14px;
+}
 
 body 
 {
     color: var(--c-4);
     font-family: "Inter", sans-serif;
     line-height: 1.6;
-    background-color: var(--c-2);
+    background-color: var(--c-1);
+    padding: 0 6.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 * {
     margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.71rem;
+    font-weight: 600;
+}
+
+
+
+.profile {
+    max-width: 384px;
+    background-color: var(--c-2);
+    border-radius: 1em;
+    padding: 2.85em;
+    text-align: center;
+}
+
+.profile_header {
+    text-align: center;
+    margin-bottom: 1.7em;
+}
+
+.profile_img {
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    margin-bottom: .8em;
+}
+
+
+.profile_location {
+    color: var(--c-5);
+}
+
+.profile_location, .profile_link {
+    font-weight: bold;
+}
+
+.profile_description {
+    margin-bottom: 1.7em;
+}
+
+
+.profile_links {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1em;
+}
+
+.profile_link-item {
+    background-color: var(--c-3);
+    border-radius: .3em;
+    padding: .75em 6.75em;
+    cursor: pointer;
+    transition: background-color 300ms, color 300ms;
+}
+
+.profile_link-item:hover {
+    background-color: var(--c-5);
+    color: var(--c-3);
+}
+
+.profile_link {
+    text-decoration: none;
+    color: inherit;
+    
 }
