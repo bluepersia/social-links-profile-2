@@ -1,0 +1,21 @@
+:root 
+{
+    --c-1: hsl(0,0%, 8%);
+    --c-2: hsl(0, 0%, 12%);
+    --c-3: hsl(0,0%,20%);
+    --c-4: white;
+    --c-5: hsl(75, 94%, 57%);
+}
+
+
+body 
+{
+    color: var(--c-4);
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    background-color: var(--c-2);
+}
+
+* {
+    margin: 0;
+}
